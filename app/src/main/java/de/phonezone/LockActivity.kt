@@ -2,12 +2,10 @@ package de.phonezone
 
 import android.app.Activity
 import android.app.ActivityManager
-import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
-import android.net.Uri
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.WindowManager
@@ -50,10 +48,7 @@ class LockActivity : Activity(), SensorEventListener {
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         window.attributes = window.attributes.apply { screenBrightness = 0.05f }
 
-        findViewById<Button>(R.id.emergency_button).setOnClickListener {
-            unlock()
-            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:112")))
-        }
+        findViewById<Button>(R.id.emergency_button).setOnClickListener { unlock() }
     }
 
     override fun onResume() {

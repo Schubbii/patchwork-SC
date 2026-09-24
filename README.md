@@ -9,7 +9,7 @@ Android-App: Per AR einen Bereich auf dem Schreibtisch festlegen. Liegt das Hand
 3. Auf den Tisch tippen: Ein blaues Quadrat (24 × 24 cm) erscheint.
 4. Handy mit dem Display nach oben in das Quadrat legen. Der Sperrbildschirm erscheint.
 5. Beim ersten Mal fragt Android, ob die App **angeheftet** werden soll. Bestätigen.
-6. Handy hochnehmen: Es wird entsperrt. Der Knopf **Notfall** entsperrt sofort und öffnet den Wähler mit 112.
+6. Handy hochnehmen: Es wird entsperrt. Der Knopf **Notfall** entsperrt das Handy sofort.
 
 ## So funktioniert es
 
