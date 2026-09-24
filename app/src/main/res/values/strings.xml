@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhoneZone</string>
+
+    <string name="status_search_plane">Bewege das Handy langsam über den Tisch, bis eine Fläche erkannt wird.</string>
+    <string name="status_tap_to_place">Fläche erkannt. Tippe auf den Tisch, um den Handy-Bereich festzulegen.</string>
+    <string name="status_leave_zone">Bereich festgelegt. Heb das Handy zuerst aus dem blauen Bereich heraus.</string>
+    <string name="status_armed">Bereit. Leg das Handy mit dem Display nach oben in den blauen Bereich.</string>
+    <string name="status_tracking_lost">Tracking verloren. Bewege das Handy langsam.</string>
+    <string name="camera_permission_needed">Die Kamera wird für AR benötigt.</string>
+    <string name="ar_not_available">AR ist auf diesem Gerät nicht verfügbar.</string>
+
+    <string name="lock_title">Handy gesperrt</string>
+    <string name="lock_settling">Leg das Handy ruhig ab …</string>
+    <string name="lock_active">Nimm das Handy aus dem Bereich, um es zu entsperren.</string>
+    <string name="lock_emergency">Notfall</string>
+</resources>
