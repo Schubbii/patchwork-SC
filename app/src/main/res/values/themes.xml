@@ -22,13 +22,13 @@
         <item name="android:layout_marginTop">16dp</item>
     </style>
 
-    <style name="PZ.Title">
+    <style name="PZ.Title" parent="">
         <item name="android:textAppearance">?attr/textAppearanceTitleMedium</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:layout_marginBottom">12dp</item>
     </style>
 
-    <style name="PZ.Hint">
+    <style name="PZ.Hint" parent="">
         <item name="android:textAppearance">?attr/textAppearanceBodyMedium</item>
         <item name="android:textColor">@color/text_secondary</item>
         <item name="android:layout_marginTop">12dp</item>
