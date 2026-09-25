@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PhoneZone</string>
+    <string name="tagline">Deine handyfreie Zone</string>
 
-    <string name="status_search_plane">Bewege das Handy langsam über den Tisch, bis eine Fläche erkannt wird.</string>
-    <string name="status_tap_to_place">Fläche erkannt. Tippe auf den Tisch, um den Handy-Bereich festzulegen.</string>
-    <string name="status_leave_zone">Bereich festgelegt. Heb das Handy zuerst aus dem blauen Bereich heraus.</string>
-    <string name="status_armed">Bereit. Leg das Handy mit dem Display nach oben in den blauen Bereich.</string>
+    <!-- Startseite -->
+    <string name="section_zone">Bereich</string>
+    <string name="zone_spot">Ablage</string>
+    <string name="zone_area">Arbeitsplatz</string>
+    <string name="zone_spot_description">Kleiner Bereich auf dem Tisch. Gesperrt, solange das Handy dort liegt.</string>
+    <string name="zone_area_description">Großer Bereich, z. B. dein Schreibtisch. Gesperrt, solange du dort bist.</string>
+
+    <string name="section_mode">Was wird gesperrt?</string>
+    <string name="mode_full">Ganzes Handy</string>
+    <string name="mode_apps">Nur Apps</string>
+    <string name="mode_full_description">Das Handy zeigt nur den Sperrbildschirm.</string>
+    <string name="mode_apps_description">Nur die ausgewählten Apps sind gesperrt, alles andere geht normal.</string>
+    <string name="pick_apps">Apps auswählen (%1$d)</string>
+    <string name="service_warning">Zum Sperren von Apps muss PhoneZone unter Bedienungshilfen aktiviert sein. Ist der Schalter ausgegraut: App-Info → ⋮ → „Eingeschränkte Einstellungen zulassen“.</string>
+    <string name="enable_service">Bedienungshilfe aktivieren</string>
+    <string name="start_zone">Bereich festlegen</string>
+
+    <string name="active_title_phone">Handy gesperrt</string>
+    <string name="active_title_apps">Apps gesperrt</string>
+    <string name="exit_hint_spot">Nimm das Handy aus dem Bereich, um es zu entsperren.</string>
+    <string name="exit_hint_area">Verlass den Bereich, um es zu entsperren.</string>
+    <string name="emergency">Notfall – entsperren</string>
+
+    <!-- AR-Ansicht -->
+    <string name="status_search_plane">Bewege das Handy langsam, bis eine Fläche erkannt wird.</string>
+    <string name="status_tap_to_place">Fläche erkannt. Tippe, um die Mitte des Bereichs festzulegen.</string>
+    <string name="status_leave_zone">Geh mit dem Handy kurz aus dem Bereich heraus.</string>
+    <string name="status_armed_spot">Bereit. Leg das Handy mit dem Display nach oben in den Bereich.</string>
+    <string name="status_armed_area">Bereit. Betritt jetzt mit dem Handy den Bereich.</string>
     <string name="status_tracking_lost">Tracking verloren. Bewege das Handy langsam.</string>
+    <string name="size">Größe</string>
     <string name="camera_permission_needed">Die Kamera wird für AR benötigt.</string>
     <string name="ar_not_available">AR ist auf diesem Gerät nicht verfügbar.</string>
 
-    <string name="lock_title">Handy gesperrt</string>
-    <string name="lock_settling">Leg das Handy ruhig ab …</string>
-    <string name="lock_active">Nimm das Handy aus dem Bereich, um es zu entsperren.</string>
-    <string name="lock_emergency">Notfall</string>
+    <!-- Sperrbildschirm -->
+    <string name="lock_title_app">%1$s ist gesperrt</string>
+    <string name="close">Schließen</string>
+
+    <!-- App-Auswahl -->
+    <string name="pick_apps_title">Apps auswählen</string>
+    <string name="pick_apps_subtitle">Diese Apps sind gesperrt, solange du im Bereich bist.</string>
+    <string name="done">Fertig</string>
+
+    <string name="blocker_service_description">Blockiert die ausgewählten Apps, solange dein Handy in der PhoneZone ist.</string>
 </resources>

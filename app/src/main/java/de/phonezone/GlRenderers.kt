@@ -111,16 +111,9 @@ class BackgroundRenderer {
     }
 }
 
-/** Zeichnet den Handy-Bereich als blaues Quadrat auf den Tisch. */
-class ZoneRenderer(halfSize: Float) {
-    private val vertices = floatBuffer(
-        floatArrayOf(
-            -halfSize, 0f, -halfSize,
-            halfSize, 0f, -halfSize,
-            halfSize, 0f, halfSize,
-            -halfSize, 0f, halfSize
-        )
-    )
+/** Zeichnet den Bereich als Quadrat auf die Fläche. Größe und Lage kommen über die Model-Matrix. */
+class ZoneRenderer {
+    private val vertices = floatBuffer(floatArrayOf(-1f, 0f, -1f, 1f, 0f, -1f, 1f, 0f, 1f, -1f, 0f, 1f))
     private var program = 0
     private var positionAttrib = 0
     private var mvpUniform = 0
@@ -163,10 +156,10 @@ class ZoneRenderer(halfSize: Float) {
         GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA, GLES20.GL_ONE_MINUS_SRC_ALPHA)
 
         // Halbtransparente Fläche + deutlicher Rand
-        GLES20.glUniform4f(colorUniform, 0.1f, 0.7f, 1f, 0.35f)
+        GLES20.glUniform4f(colorUniform, 0.56f, 0.65f, 1f, 0.3f)
         GLES20.glDrawArrays(GLES20.GL_TRIANGLE_FAN, 0, 4)
         GLES20.glLineWidth(6f)
-        GLES20.glUniform4f(colorUniform, 0.1f, 0.7f, 1f, 1f)
+        GLES20.glUniform4f(colorUniform, 0.56f, 0.65f, 1f, 1f)
         GLES20.glDrawArrays(GLES20.GL_LINE_LOOP, 0, 4)
 
         GLES20.glDisable(GLES20.GL_BLEND)
